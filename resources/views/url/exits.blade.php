@@ -20,7 +20,7 @@
                         </thead>
                         <tbody>
                             @foreach ($urls as $url)
-                                <tr class="{{$url->deactivated_at > now() ? diaabled :''}}">
+                                <tr class="{{$url->deactivated_at > now() ? 'diaabled ':''}}">
                                     <td>{{$url->destination_url}}</td>
                                     <td>
                                         @if($url->deactivated_at > now())
